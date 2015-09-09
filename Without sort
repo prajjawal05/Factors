@@ -1,0 +1,20 @@
+//given a number find its factors
+#include<stdio.h>
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int n,i,j;
+	scanf("%d", &n);
+	for(i=1;i<=sqrt(n);i++)
+	{
+		if(n%i==0)
+		{
+			printf("%d\n", i);
+			j=n/i;
+			if(j!=sqrt(n))
+			printf("%d\n", j);			
+		}
+	}
+	return 0;
+}
